@@ -1,0 +1,61 @@
+html,
+body {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  background-color: black;
+}
+
+.title {
+  border: brown;
+  border-width: 2px;
+  border-radius: 1rem;
+  display: block;
+  text-align: center;
+  background-color: blanchedalmond;
+  margin-top: 3rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.header {
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  text-transform: uppercase;
+  -webkit-text-decoration: black;
+          text-decoration: black;
+  font-size: 4rem;
+  padding-top: 2rem;
+}
+
+.subheader {
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  -webkit-text-decoration: black;
+          text-decoration: black;
+  font-size: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.anime-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 90vw;
+  background-color: #000000;
+  background-image: linear-gradient(315deg, #000000 0%, #7f8c8d 74%);
+  margin: 1rem auto;
+  padding: 2rem auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5rem;
+}
+/*# sourceMappingURL=style.css.map */
