@@ -14,14 +14,14 @@ const query = async function () {
         DOMSelectors.grid.insertAdjacentHTML(
           "beforeend",
           `<div class="release">
-          <img src="" alt="" class="release">
-        </div>
+          <img src="${anime.image_url}" alt="cover image" class="release">
+          </div>
         <div class="infograph">
-          <h1 class="anime-title">{$anime.title}</h1>
-          <h2 class="anime-rating">{$anime.score}</h2>
-          <h3 class="anime-ep">{anime.episodes<h3>
-          <h4 class="anime-date"{$anime.start_date}></h4>
-          <h5 class="anime-genre">{$anime.}</h5>`
+          <h1 class="anime-title">${anime.title}</h1>
+          <h2 class="anime-rating">${anime.score}</h2>
+          <h3 class="anime-ep">${anime.rank}<h3>
+          <h4 class="anime-date"${anime.start_date}></h4>
+          <h5 class="anime-genre">${anime.rank}</h5>`
         );
       });
     } catch (error) {
