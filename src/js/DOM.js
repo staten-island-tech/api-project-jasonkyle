@@ -1,5 +1,5 @@
 const DOMSelectors = {
-  grid: document.querySelector(""),
+  grid: document.querySelector(".anime-grid"),
 };
 
 export { DOMSelectors };

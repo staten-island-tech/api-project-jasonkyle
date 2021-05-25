@@ -1,7 +1,6 @@
-import { DOMSelectors } from "./";
+import { DOMSelectors } from "./DOM";
 import { genres } from "./genre";
 
-const key = "";
 
 const query = async function () {
     try {
@@ -9,24 +8,31 @@ const query = async function () {
         `https://api.jikan.moe/v3/top/anime/1/airing`
       );
       const data = await response.json();
-      console.log(data);
-      data.results.forEach((anime) => {
+      data.top.forEach((anime) => {
+        console.log(anime.top);
         DOMSelectors.grid.insertAdjacentHTML(
           "beforeend",
-          `<div class="release">
-          <img src="${anime.image_url}" alt="cover image" class="release">
-          </div>
-        <div class="infograph">
-          <h1 class="anime-title">${anime.title}</h1>
-          <h2 class="anime-rating">${anime.score}</h2>
-          <h3 class="anime-ep">${anime.rank}<h3>
-          <h4 class="anime-date"${anime.start_date}></h4>
-          <h5 class="anime-genre">${anime.rank}</h5>`
+          `<div class="anime-card">
+            <div class="front">
+             <img src="${anime.image_url}" alt="" class="image">
+            </div>     
+            <div class="info">
+              <h1 class="anime-title">${anime.title}</h1>
+              <h2 class="anime-rating">${anime.score}</h2>
+            </div>
+            <div class="information">
+              <h3 class="anime-ep">${anime.episodes}</h3>
+              <h4 class="anime-date">${anime.start_date}</h4>
+            </div>  
+         </div> `
         );
       });
     } catch (error) {
       console.log(error);
       alert("Hey, something went wrong!");
-    
-};
-  query()};
+    }
+  };
+  query();
+
+//Search Bar
+//Filter Results 
