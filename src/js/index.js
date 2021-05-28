@@ -15,14 +15,18 @@ const query = async function () {
           `<div class="anime-card">
             <div class="front">
              <img src="${anime.image_url}" alt="" class="image">
-            </div>     
-            <div class="info">
-              <h1 class="anime-title">${anime.title}</h1>
-              <h2 class="anime-rating">${anime.score}</h2>
-            </div>
-            <div class="information">
-              <h3 class="anime-ep">${anime.episodes}</h3>
-              <h4 class="anime-date">${anime.start_date}</h4>
+            </div> 
+            <div class="back">     
+              <div class="info">
+               <h1 class="anime-title">${anime.title}</h1>
+                <h2 class="anime-rating">Rating: ${anime.score}</h2>
+              </div>
+              <div class="information">
+                <h3 class="anime-ep">Current Ep: ${anime.episodes}</h3>
+                <h4 class="anime-date">Release Date: ${anime.start_date}</h4>
+              </div>
+              <div class="button">
+               <input type="button" class="url"  onclick=window.open('${anime.url}','_blank') value="READ MORE!"></div>
             </div>  
          </div> `
         );

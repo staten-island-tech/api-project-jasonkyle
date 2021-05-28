@@ -1,10 +1,11 @@
+@import "_animecard.scss";
 
 html,
 body {
   font-size: 62.5%;
   padding: 0;
   margin: 0;
-  background-color: black;
+  background-image: url(../images/download.png);
 }
 
 .title {
@@ -13,10 +14,9 @@ body {
     border-radius: 1rem;
     display: block;
     text-align: center;
-    background-color: blanchedalmond;
-    margin-top: 3rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    background-color: rgb(0, 0, 0);
+    margin-left: 10rem;
+    margin-right: 10rem;
 }
 
 .header {
@@ -25,8 +25,9 @@ body {
     text-transform: capitalize;
     text-transform: uppercase;
     text-decoration: black;
-    font-size: 4rem;
+    font-size: 3.5rem;
     padding-top: 2rem;
+    color: white;
 }
 
 .subheader {
@@ -37,6 +38,15 @@ body {
     font-size: 2rem;
     padding-top: 1rem;
     padding-bottom: 2rem;
+    color: white;
+    background-attachment: fixed;
+}
+
+.bold {
+    color: orange;
+    font-size: 4.5rem;
+    text-transform: bold;
+
 }
 
 .anime-grid {
@@ -44,34 +54,12 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     background-color: blanchedalmond;
-    margin-top: 10rem;
-    padding: 30rem 25rem;
-    margin-left: 3rem;
-    margin-right: 3rem;
+    margin-top: 20rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
     align-items: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 2rem;
 }
-
-.anime-card {
-    height: 65vh;
-    width: 20vw;
-    margin: 0 auto;
-    position: relative;
-    margin: 2rem auto;
-}
-
-.front {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-position: center;
-    z-index: 3;
-    transition: all 0.3s;
-}
-
-.image {
-    width: 100%;
-    height: 100%;
-  }
 
