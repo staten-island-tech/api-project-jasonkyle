@@ -11,14 +11,14 @@ body {
 }
 
 .title {
-    border-bottom: 1px solid gold;
-    border-left: 1px solid gold;
-    border-right: 1px solid gold;
+    border-bottom: 3px solid #051f24;
+    border-left: 3px solid #051f24;
+    border-right: 3px solid #051f24;
     border-bottom-left-radius: 2.5rem;
     border-bottom-right-radius: 2.5rem;
     display: block;
     text-align: center;
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(44, 61, 73, .9);
     margin-left: 10rem;
     margin-right: 10rem;
 }
@@ -49,7 +49,7 @@ body {
 .bold {
     color: orange;
     font-size: 4.5rem;
-    text-transform: bold;
+font-weight: bold;
 
 }
 
@@ -57,15 +57,15 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: blanchedalmond;
-    margin-left: 15rem;
-    margin-right: 15rem;
+    background-color: #1F456E;
+    margin-left: 17rem;
+    margin-right: 17rem;
     align-items: center;
     padding-left: 3rem;
     padding-right: 3rem;
     padding-top: 2rem;
-    border: .3rem solid rgb(126, 95, 18) ;
-    border-top: none;
+    border: .5rem solid #051f24 ;
+   border-top: none;
     margin-bottom: 5rem;
 }
 
@@ -73,14 +73,14 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: blanchedalmond;
-    margin-left: 15rem;
-    margin-right: 15rem;
+    background-color: #1F456E;
+    margin-left: 17rem;
+    margin-right: 17rem;
     align-items: center;
     padding-left: 3rem;
     padding-right: 3rem;
     padding-top: 2rem;
-    border: .3rem solid rgb(126, 95, 18) ;
+    border: .5rem solid #051f24;
     border-top: none;
     margin-bottom: 5rem;
 
@@ -89,25 +89,25 @@ body {
 .toggle {
     margin-top: 10rem;
     padding-top: 2rem;
-    margin-left: 15rem;
-    margin-right: 15rem;
+    margin-left: 17rem;
+    margin-right: 17rem;
     padding-right: 5%;
     display: flex;
     justify-content: flex-end;
 }
 
 .btn {
-    border-top-left-radius: 40%;
-    border-top-right-radius: 40%;
-    background-color: blanchedalmond;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    background-color: #1F456E;
     height: 4vh;
     width: 30vh;
-    color: rgb(99, 13, 13);
+    color: white;
     font-size: 2.5rem;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-left: 2rem;
-    border: .5rem solid rgb(70, 23, 23) ;
-    border-bottom: .3rem solid rgb(70, 23, 23) ;
+    border: .4rem solid #051f24 ;
+    border-bottom: none;
     margin-bottom: -.3rem;
 }
 
@@ -116,23 +116,26 @@ body {
     text-align: center;
     display: block;
     justify-content: center;
-    background-color: blanchedalmond;
-    margin-left: 15rem;
-    margin-right: 15rem;
-    border: .3rem solid rgb(126, 95, 18) ;
+    background-color: #1F456E;
+    margin-left: 17rem;
+    margin-right: 17rem;
+    border: .5rem solid #051f24;
     border-bottom: none;
     padding-top: 1.5rem;
     margin-bottom: -2rem;
+    font-weight: bold;
 }
 
 .pressed {
-    background-color: rgb(240, 187, 109);
+    background-color: #151E3D;
+    color: goldenrod;
 }
 
 .btn:hover{
-    background-color: rgb(240, 187, 109);
+    background-color: #151E3D;
+    color: goldenrod;
 }
 
 .text {
-    color: rgb(85, 83, 83);
+    color: rgb(255, 255, 255);
 }
